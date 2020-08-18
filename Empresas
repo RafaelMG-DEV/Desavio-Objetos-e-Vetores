@@ -1,0 +1,54 @@
+/*==============================================================
+        Desafio 2 Módulo 1 BootCamp LaunchBase
+
+Crie um programa que armazena dados da empresa Rocketseat dentro de um objeto chamado empresa. Os dados a serem armazenados são:
+
+Nome: Rocketseat
+
+Cor: Roxo
+
+Foco: Programação
+
+Endereço:
+
+Rua: Rua Guilherme Gembala
+Número: 260
+
+=============================================================*/
+
+const empresa = [
+{
+    nome: "RocketSeat",
+    cor: "Roxa",
+    foco: "Programação",
+    endereço: 
+    {
+        rua: "Rua Guilherme Gembala",
+        numero: 260,
+      }
+     },
+     {
+        nome: "PetGuimas",
+        cor: "Azul",
+        foco: "Pets",
+        endereço: 
+        {
+            rua: "Rua do Trevo",
+            numero: 320,
+          }
+         }
+        ]
+
+console.log(`A empresa ${empresa[0].nome} está localizada na ${empresa[0].endereço.rua} número ${empresa[0].endereço.numero}`);
+
+console.log(`A empresa ${empresa[1].nome} está localizada na ${empresa[1].endereço.rua} número ${empresa[1].endereço.numero}`);
+
+// forma alternativa e mais completa
+
+empresa.forEach(empresa=>
+    {
+        console.log(`A empresa ${empresa.nome} está localizada na ${empresa.endereço.rua} número ${empresa.endereço.numero}`);
+        console.log(`O seu foco é ${empresa.foco} e a cor da sua logo é ${empresa.cor}`);
+        
+});
+
